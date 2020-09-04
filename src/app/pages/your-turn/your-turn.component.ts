@@ -10,8 +10,6 @@ export class YourTurnComponent implements OnInit {
 
   public currentSecuence: string = '';
 
-  public loadStatus: string  = 'flex';
-
   constructor( private  route: ActivatedRoute ) { }
 
   ngOnInit(): void {

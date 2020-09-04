@@ -14,10 +14,14 @@ export class DataService {
   constructor( private http: HttpClient ) { }
 
   public getQrCode() {
-    return this.http.get(endpoint + '/sequences/lastcode')
+    return this.http.get(endpoint + '/sequences/lastcode');
   }
 
-  public getTurn() {
-    return this.http.get(endpoint + '');
+  public getTurn( sec: string ) {
+    return this.http.get(endpoint + '/sequences/secuence/' + sec);
+  }
+
+  public getNextSequence() {
+    return this.http.get(endpoint + '/sequences/nextsequence');
   }
 }

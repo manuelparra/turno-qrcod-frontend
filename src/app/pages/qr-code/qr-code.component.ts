@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
 })
 export class QrCodeComponent implements OnInit {
 
-  loadStatus: string  = 'flex';
+  loadStatus = 'flex';
 
   constructor() { }
 

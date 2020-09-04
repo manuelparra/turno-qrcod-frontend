@@ -7,11 +7,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { YourturnComponent } from './yourturn/yourturn.component';
-
+import { SecuenceComponent } from './secuence/secuence.component';
 
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, QrcodeComponent, YourturnComponent],
+  declarations: [NavbarComponent, FooterComponent, QrcodeComponent, YourturnComponent, SecuenceComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -21,7 +21,8 @@ import { YourturnComponent } from './yourturn/yourturn.component';
     NavbarComponent,
     FooterComponent,
     QrcodeComponent,
-    YourturnComponent
+    YourturnComponent,
+    SecuenceComponent
   ]
 })
 export class ComponentsModule { }

@@ -9,12 +9,12 @@ import { Subscription, interval } from 'rxjs';
   styleUrls: ['./qrcode.component.css']
 })
 export class QrcodeComponent implements OnInit, OnDestroy {
-  @ViewChild('qrImg') qrImg: ElementRef
+  @ViewChild('qrImg') qrImg: ElementRef;
 
   @Output() toggle = new EventEmitter<string>();
 
   private getQrSubcription: Subscription;
-  private flagSubStatus: boolean = false;
+  private flagSubStatus = false;
 
   public qrCode: any = {};
 
@@ -34,10 +34,10 @@ export class QrcodeComponent implements OnInit, OnDestroy {
       this.getQrSubcription = this.dataService.getQrCode().subscribe(
         (data: any) => {  // Success
           this.toggle.emit('none');
-          this.renderer.addClass(this.qrImg.nativeElement, "show-efect");
+          this.renderer.addClass(this.qrImg.nativeElement, 'show-efect');
           this.qrCode = data;
         },
-        (error: any) => {3
+        (error: any) => {
           console.log(error);
         }
       );
