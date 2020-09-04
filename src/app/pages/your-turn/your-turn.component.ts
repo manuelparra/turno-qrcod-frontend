@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class YourTurnComponent implements OnInit {
 
-  public currentSecuence: string = '';
+  public currentSecuence = '';
 
   constructor( private  route: ActivatedRoute ) { }
 
