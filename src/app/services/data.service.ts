@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { catchError } from 'rxjs/internal/operators';
-import { Observable, throwError, Observer } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
-const endpoint = '/api/v1';
+const endpoint = 'http://10.0.0.2:3000/api/v1';
 
 @Injectable({
   providedIn: 'root'
