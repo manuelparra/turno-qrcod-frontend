@@ -145,3 +145,40 @@ body {
   90%   { opacity: 0.3; }
   100%  { opacity: 0.0; }
 }
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+    top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .subtitulo {
+    font-size: 1.4rem;
+    top: 160px;
+  }
+
+  .pie {
+    font-size: 1.4rem;
+    bottom: 130px;
+  }
+}
+
+@media (max-width: 290px) {
+  .titulo {
+    font-size: 1.8rem;
+    top: 70px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+
+  .pie {
+    font-size: 1.3rem;
+  }
+
+}
