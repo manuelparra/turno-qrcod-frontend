@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
-const endpoint = 'http://10.0.0.2:3000/api/v1';
+const endpoint = 'https://apiturno.papiro.es/api/v1'; // 'http://10.0.0.2:3000/api/v1'; 'https://apiturno.papiro.es/api/v1';
 
 @Injectable({
   providedIn: 'root'
